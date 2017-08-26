@@ -14,7 +14,7 @@ var questions = {
           },
 
           {
-            question : "3(x-4)=18.¿Cuál es el valor de X?",
+            question : "3(x-4)=18.Which is the value of X?",
             answer : [
               {option: "6", correct: "false"},
               {option: "22/3", correct: "false"},
@@ -36,7 +36,7 @@ var questions = {
 
 
           {
-            question : "Si x+3= y, ¿cuánto es 2x + 6?",
+            question : "Si x+3 = y.How much is it 2x + 6?",
             answer : [
               {option: "y", correct: "false"},
               {option: "no se puede terminar", correct: "false"},
