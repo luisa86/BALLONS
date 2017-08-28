@@ -3,19 +3,19 @@ var questions = [
   question: "[(8+5)-3)*2+4]/10",
   answer: [{
       option: "2",
-      correct: "false"
+      correct: false
     },
     {
       option: "2.4",
-      correct: "false"
+      correct: false
     },
     {
       option: "6",
-      correct: "true"
+      correct: true
     },
     {
       option: "1.8",
-      correct: "false"
+      correct: false
     },
   ],
   type: 'math'
@@ -24,19 +24,19 @@ var questions = [
   question: "3(x-4)=18.Which is the value of X?",
   answer: [{
       option: "6",
-      correct: "false"
+      correct: false
     },
     {
       option: "22/3",
-      correct: "false"
+      correct: false
     },
     {
       option: "14/3",
-      correct: "false"
+      correct: false
     },
     {
       option: "10",
-      correct: "true"
+      correct: true
     },
   ],
   type: 'math'
@@ -45,40 +45,40 @@ var questions = [
   question: "4 x 4 - 4 + 4 x 4 = ¿...? ",
   answer: [{
       option: "-4",
-      correct: "false"
+      correct: false
     },
     {
       option: "28",
-      correct: "true"
+      correct: true
     },
     {
       option: "64",
-      correct: "false"
+      correct: false
     },
     {
       option: "-16",
-      correct: "false"
+      correct: false
     },
   ],
   type: 'math'
 },
 {
-  question: "Si x+3 = y.How much is it 2x + 6?",
+  question: "Si x+3 = y. How much is it 2x + 6?",
   answer: [{
       option: "y",
-      correct: "false"
+      correct: false
     },
     {
       option: "no se puede terminar",
-      correct: "false"
+      correct: false
     },
     {
       option: "2y",
-      correct: "true"
+      correct: true
     },
     {
       option: "4y",
-      correct: "false"
+      correct: false
     },
   ],
   type: "math"
@@ -87,19 +87,19 @@ var questions = [
   question: "Are you and your friends German?",
   answer: [{
       option: "Yes, I am.",
-      correct: "false"
+      correct: false
     },
     {
         option: "Yes, we are.",
-        correct: "true"
+        correct: true
       },
       {
         option: "Yes, they are.",
-        correct: "false"
+        correct: false
       },
       {
         option: "Yes, I do",
-        correct: "false"
+        correct: false
       },
     ],
   type: "english"
@@ -108,19 +108,19 @@ var questions = [
   question: "There's John and ____ wife.",
   answer: [{
       option: "His",
-      correct: "true"
+      correct: true
     },
     {
       option: "He´s",
-      correct: "false"
+      correct: false
     },
     {
       option: "Her",
-      correct: "false"
+      correct: false
     },
     {
       option: "Hi´s",
-      correct: "false"
+      correct: false
     },
   ],
   type: "english"
@@ -129,19 +129,19 @@ var questions = [
   question: "They are going to the UK with ____ son.",
   answer: [{
       option: "Thre´re",
-      correct: "false"
+      correct: false
     },
     {
       option: "They",
-      correct: "false"
+      correct: false
     },
     {
       option: "There",
-      correct: "false"
+      correct: false
     },
     {
       option: "Their",
-      correct: "true"
+      correct: true
     },
   ],
   type: "english"
@@ -150,19 +150,19 @@ var questions = [
   question: "That computer ____ in Thailand.",
   answer: [{
       option: "Were made.",
-      correct: "false"
+      correct: false
     },
     {
       option: "Was make.",
-      correct: "false"
+      correct: false
     },
     {
       option: "Was made.",
-      correct: "true"
+      correct: true
     },
     {
       option: "Were make",
-      correct: "false"
+      correct: false
     },
   ],
   type: "english"
@@ -171,19 +171,19 @@ var questions = [
   question: "What is the minimum component that forms living beings?",
   answer: [{
       option: "Particle",
-      correct: "false"
+      correct: false
     },
     {
       option: "Tissue",
-      correct: "false"
+      correct: false
     },
     {
       option: "Atoms",
-      correct: "false"
+      correct: false
     },
     {
       option: "Cell",
-      correct: "true"
+      correct: true
     },
   ],
   type: "sciencie"
@@ -192,19 +192,19 @@ var questions = [
   question: "One milligram is:",
   answer: [{
       option: "Are 0.001 grams",
-      correct: "false"
+      correct: false
     },
     {
       option: "Both are true",
-      correct: "true"
+      correct: true
     },
     {
       option: "It's a thousand micrograms",
-      correct: "false"
+      correct: false
     },
     {
       option: "Both are false",
-      correct: "false"
+      correct: false
     },
   ],
   type: "sciencie"
@@ -213,19 +213,19 @@ var questions = [
   question: "The speed at which the light travels is:",
   answer: [{
       option: "30.000 km/h",
-      correct: "false"
+      correct: false
     },
     {
       option: "300.000 km/s",
-      correct: "true"
+      correct: true
     },
     {
       option: "300.000 m/s",
-      correct: "false"
+      correct: false
     },
     {
       option: "30.000 mi/s",
-      correct: "false"
+      correct: false
     },
   ],
   type: "sciencie"
@@ -234,19 +234,19 @@ var questions = [
   question: "The column to the right of the periodic table is composed by:",
   answer: [{
       option: "Minerals",
-      correct: "false"
+      correct: false
     },
     {
       option: "Noble gases",
-      correct: "true"
+      correct: true
     },
     {
       option: "Alkaline",
-      correct: "false"
+      correct: false
     },
     {
       option: "Halides",
-      correct: "false"
+      correct: false
     },
   ],
   type: "sciencie"
@@ -255,19 +255,19 @@ var questions = [
   question: "How many countries does Argentina limit?",
   answer: [{
       option: "3",
-      correct: "false"
+      correct: false
     },
     {
       option: "4",
-      correct: "false"
+      correct: false
     },
     {
       option: "6",
-      correct: "false"
+      correct: false
     },
     {
       option: "5",
-      correct: "true"
+      correct: true
     },
   ],
   type: "geography"
@@ -276,19 +276,19 @@ var questions = [
   question: "What is the international code for Cuba ?.",
   answer: [{
       option: "CA",
-      correct: "false"
+      correct: false
     },
     {
       option: "NO ANSWER IS CORRECT",
-      correct: "false"
+      correct: false
     },
     {
       option: "CB",
-      correct: "false"
+      correct: false
     },
     {
       option: "CU",
-      correct: "true"
+      correct: true
     },
   ],
   type: "geography"
@@ -297,19 +297,19 @@ var questions = [
   question: "What is the capital of Libya?",
   answer: [{
       option: "Trípoli",
-      correct: "true"
+      correct: true
     },
     {
       option: "Beirut",
-      correct: "false"
+      correct: false
     },
     {
       option: "Cairo",
-      correct: "false"
+      correct: false
     },
     {
       option: "Riad",
-      correct: "false"
+      correct: false
     },
   ],
   type: "geography"
@@ -318,19 +318,19 @@ var questions = [
   question: "How many islets do the Canary Islands have?",
   answer: [{
       option: "7",
-      correct: "false"
+      correct: false
     },
     {
       option: "6",
-      correct: "true"
+      correct: true
     },
     {
       option: "5",
-      correct: "false"
+      correct: false
     },
     {
       option: "4",
-      correct: "false"
+      correct: false
     },
   ],
   type: "geography"
