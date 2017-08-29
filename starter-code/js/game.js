@@ -5,5 +5,16 @@ $(document).ready(function() {
   var $question = $('<div>').attr('class', game.getType()).text(game.getQuestion());
   $container.append($question);
 
-  var $options = $('<div>').attr('')
+  var $answer =
+  var $answers = $('<div>').attr('class', 'options');
+  game.getAnswers().forEach(function(answer){
+    var $respuestas = $('<p>').attr('class', 'correct').text("1. " + answer.option);
+    $answers.append($respuestas);
+    
+
+  });
+  $container.append($answers);
+  $("p").on("click",(function(){
+    console.log("hola soy luisi");
+  }));
 });
