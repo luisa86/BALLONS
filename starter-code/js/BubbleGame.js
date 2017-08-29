@@ -1,15 +1,23 @@
 function BubbleGame(questionsPackage){
   this.questions = questionsPackage;
   this.selectedQuestion = "";
+  this.changeActualQuestion();
 }
 
-BubbleGame.prototype.showQuestion = function(){
+BubbleGame.prototype.changeActualQuestion = function(){
   this.selectedQuestion = _.sample(this.questions);
-  console.log('QUESTION : ' + this.selectedQuestion.question);
-  console.log('POSSIBLE ANWERS: ');
-  this.selectedQuestion.answer.forEach(function(answer, index){
-    console.log(index+1 + '. ' + answer.option);
-  });
+};
+
+BubbleGame.prototype.getQuestion = function () {
+  return this.selectedQuestion.question;
+};
+
+BubbleGame.prototype.getAnswers = function () {
+  return this.selectedQuestion.answers;
+};
+
+BubbleGame.prototype.getType = function () {
+  return this.selectedQuestion.type;
 };
 
 BubbleGame.prototype.testAnswer = function(number){

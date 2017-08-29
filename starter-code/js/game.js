@@ -1,12 +1,9 @@
 var game = new BubbleGame(questions);
 
-game.showQuestion();
-game.testAnswer();
-
 $(document).ready(function() {
+  var $container = $('#container');
+  var $question = $('<div>').attr('class', game.getType()).text(game.getQuestion());
+  $container.append($question);
 
- $(".answer").append("QUESTION");
- $("this.selectedQuestion.answer.option").append("POSSIBLE ANSWERS: ");
-
-
+  var $options = $('<div>').attr('')
 });

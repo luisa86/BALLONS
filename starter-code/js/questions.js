@@ -1,7 +1,7 @@
 var questions = [
 {
   question: "[(8+5)-3)*2+4]/10",
-  answer: [{
+  answers: [{
       option: "2",
       correct: false
     },
@@ -22,7 +22,7 @@ var questions = [
 },
 {
   question: "3(x-4)=18.Which is the value of X?",
-  answer: [{
+  answers: [{
       option: "6",
       correct: false
     },
@@ -43,7 +43,7 @@ var questions = [
 },
 {
   question: "4 x 4 - 4 + 4 x 4 = ¿...? ",
-  answer: [{
+  answers: [{
       option: "-4",
       correct: false
     },
@@ -64,7 +64,7 @@ var questions = [
 },
 {
   question: "Si x+3 = y. How much is it 2x + 6?",
-  answer: [{
+  answers: [{
       option: "y",
       correct: false
     },
@@ -85,7 +85,7 @@ var questions = [
 },
 {
   question: "Are you and your friends German?",
-  answer: [{
+  answers: [{
       option: "Yes, I am.",
       correct: false
     },
@@ -106,7 +106,7 @@ var questions = [
 },
 {
   question: "There's John and ____ wife.",
-  answer: [{
+  answers: [{
       option: "His",
       correct: true
     },
@@ -127,7 +127,7 @@ var questions = [
 },
 {
   question: "They are going to the UK with ____ son.",
-  answer: [{
+  answers: [{
       option: "Thre´re",
       correct: false
     },
@@ -148,7 +148,7 @@ var questions = [
 },
 {
   question: "That computer ____ in Thailand.",
-  answer: [{
+  answers: [{
       option: "Were made.",
       correct: false
     },
@@ -169,7 +169,7 @@ var questions = [
 },
 {
   question: "What is the minimum component that forms living beings?",
-  answer: [{
+  answers: [{
       option: "Particle",
       correct: false
     },
@@ -190,7 +190,7 @@ var questions = [
 },
 {
   question: "One milligram is:",
-  answer: [{
+  answers: [{
       option: "Are 0.001 grams",
       correct: false
     },
@@ -211,7 +211,7 @@ var questions = [
 },
 {
   question: "The speed at which the light travels is:",
-  answer: [{
+  answers: [{
       option: "30.000 km/h",
       correct: false
     },
@@ -232,7 +232,7 @@ var questions = [
 },
 {
   question: "The column to the right of the periodic table is composed by:",
-  answer: [{
+  answers: [{
       option: "Minerals",
       correct: false
     },
@@ -253,7 +253,7 @@ var questions = [
 },
 {
   question: "How many countries does Argentina limit?",
-  answer: [{
+  answers: [{
       option: "3",
       correct: false
     },
@@ -274,12 +274,12 @@ var questions = [
 },
 {
   question: "What is the international code for Cuba ?.",
-  answer: [{
+  answers: [{
       option: "CA",
       correct: false
     },
     {
-      option: "NO ANSWER IS CORRECT",
+      option: "NO answers IS CORRECT",
       correct: false
     },
     {
@@ -295,8 +295,8 @@ var questions = [
 },
 {
   question: "What is the capital of Libya?",
-  answer: [{
-      option: "Trípoli",
+  answers: [{
+      option: "Tripoli",
       correct: true
     },
     {
@@ -316,7 +316,7 @@ var questions = [
 },
 {
   question: "How many islets do the Canary Islands have?",
-  answer: [{
+  answers: [{
       option: "7",
       correct: false
     },
