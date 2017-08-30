@@ -21,6 +21,7 @@ BubbleGame.prototype.getType = function () {
 };
 
 
+
   // BubbleGame.prototype.comparateAnswer = function () {
   //   var comparate = function () {
   //     if()
