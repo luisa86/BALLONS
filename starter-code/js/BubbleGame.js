@@ -2,6 +2,7 @@ function BubbleGame(questionsPackage){
   this.questions = questionsPackage;
   this.selectedQuestion = "";
   this.changeActualQuestion();
+
 }
 
 BubbleGame.prototype.changeActualQuestion = function(){

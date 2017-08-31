@@ -4,6 +4,7 @@ var assignature;
 var $container;
 var $question;
 var $pop = $('.pop');
+var points = new Points (200, 50, 50, 'rgb(255, 0, 0)', 30, $('#container'));
 
 function initGame() {
   $container = $('<div>').attr('id', 'container');
@@ -14,10 +15,10 @@ function initGame() {
 }
 
 function animateAssignature() {
+  $('.active').removeClass('active');
   var type = game.getType();
   var $typeAssignature = $('#assignature .' + type);
   $typeAssignature.addClass('active');
-  // $typeAssignature.removeClass('active');
 }
 
 function printQuestion() {
@@ -39,10 +40,25 @@ function printRespuest() {
     var res = $(this).attr('result');
     if (res == "true") {
       alert("IS CORRECT!!!!");
+      points.createBubble();
     } else {
       alert("HAS LOST!!!!");
     }
   }));
+}
+
+function deletePreviousQuestion(){
+  var $delete = $('#container').children();
+  $delete.remove();
+}
+
+function starBubble(){
+  bubble = new Bubble(400, 150, 150, 'rgba(229, 97, 211, 0.8)', 100, $container);
+    var move = function () {
+    setInterval (function(){
+     bubble.exploit();
+    },60);
+   };
 }
 
 $(document).ready(function() {
@@ -51,10 +67,12 @@ $(document).ready(function() {
 
   $("button").on("click", function() {
     game.changeActualQuestion();
+    deletePreviousQuestion();
     animateAssignature();
     printQuestion();
     printAnswers();
     printRespuest();
+    starBubble();
   });
 
 

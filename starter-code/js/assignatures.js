@@ -5,10 +5,10 @@ function Assignature(color, fontSize) {
 
 Assignature.prototype.init = function () {
   var $assignature = $('<div>').attr('id', 'assignature');
-  var $math = $('<div>').attr('class', 'math').text('math');
-  var $english = $('<div>').attr('class', 'english').text('english');
-  var $sciencie = $('<div>').attr('class', 'sciencie').text('sciencie');
-  var $geography = $('<div>').attr('class', 'geography').text('geography');
+  var $math = $('<div>').attr('class', 'math').text('MATH');
+  var $english = $('<div>').attr('class', 'english').text('ENGLISH');
+  var $sciencie = $('<div>').attr('class', 'sciencie').text('SCIENCIE');
+  var $geography = $('<div>').attr('class', 'geography').text('GEOGRAPHY');
 
   $assignature.append($math);
   $assignature.append($english);
