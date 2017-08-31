@@ -7,7 +7,7 @@ Assignature.prototype.init = function () {
   var $assignature = $('<div>').attr('id', 'assignature');
   var $math = $('<div>').attr('class', 'math').text('math');
   var $english = $('<div>').attr('class', 'english').text('english');
-  var $science = $('<div>').attr('class', 'sciencie').text('science');
+  var $sciencie = $('<div>').attr('class', 'sciencie').text('sciencie');
   var $geography = $('<div>').attr('class', 'geography').text('geography');
 
   $assignature.append($math);
