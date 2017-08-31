@@ -19,11 +19,3 @@ BubbleGame.prototype.getAnswers = function () {
 BubbleGame.prototype.getType = function () {
   return this.selectedQuestion.type;
 };
-
-
-
-  // BubbleGame.prototype.comparateAnswer = function () {
-  //   var comparate = function () {
-  //     if()
-  //   };
-  // };

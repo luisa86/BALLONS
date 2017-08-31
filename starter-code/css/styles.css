@@ -14,11 +14,18 @@ h1 {
 }
 
 
-#subjects>div {
+#assignature>div {
   display: inline-block;
   margin: 3%;
   margin-left: 165px;
   height: 20px;
+}
+
+
+
+.active {
+  color: blue;
+  transition: color 2s;
 }
 
 .box {
@@ -54,6 +61,7 @@ h1 {
 }
 
 button {
+  position: absolute;
   width: 120px;
   height: 80px;
   background: blue;
@@ -61,6 +69,7 @@ button {
   color: white;
   font-size: 18px;
   border-radius: 24px;
+
 }
 
 h2 {
@@ -84,8 +93,7 @@ h2 {
 
 
 
-.answer {
-  display: inline-block;
+/*.answer {
   width: 250px;
   height: 150px;
   margin: 67px 0 0 40px;
@@ -93,5 +101,10 @@ h2 {
   background: transparent;
   font-size: 20px;
   color: black;
+
+}*/
+
+.pop {
+  border-radius: 50px;
 
 }
