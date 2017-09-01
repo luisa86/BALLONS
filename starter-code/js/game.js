@@ -1,5 +1,6 @@
 var game;
 var bubble;
+
 var assignature;
 var $container;
 var $question;
