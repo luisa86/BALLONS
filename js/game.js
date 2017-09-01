@@ -10,7 +10,7 @@ function Game(lives){
   this.refreshScore();
   this.refreshLives();
   this.generateQuestion();
-  this.gameOver();
+  // this.gameOver();
 }
 
 Game.prototype.refreshScore = function(){
@@ -41,7 +41,9 @@ Game.prototype.ready = function(valid){
     this.score -= 5;
     console.log("La respuesta es invalida, prueba otra vez");
     this.lives--;
+    this.gameOver();
     this.refreshLives();
+
   }
 
 
@@ -50,7 +52,9 @@ Game.prototype.ready = function(valid){
 };
 
  Game.prototype.gameOver = function(){
-  if (lives === 0) {
-       console.log("has lost");
+  //  var lost = $('<div class="overlap">');
+  if (this.lives === 0) {
+      // lost.append($('<img src="./images/gameover.gif" width=100>'));
+      alert("has lost");
   }
  };
