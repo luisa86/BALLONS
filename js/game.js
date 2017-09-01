@@ -52,9 +52,9 @@ Game.prototype.ready = function(valid){
 };
 
  Game.prototype.gameOver = function(){
-  //  var lost = $('<div class="overlap">');
+    var lost = $('<div class="lost">');
   if (this.lives === 0) {
-      // lost.append($('<img src="./images/gameover.gif" width=100>'));
-      alert("has lost");
+       lost.append($('<img src="images/gameover.gif" width=100px >'));
+      alert("HAS LOST!!!!");
   }
  };
