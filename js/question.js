@@ -6,7 +6,7 @@ function Question(parent){
   this.question = _.sample(questionsList);
 
   // Creamos el elemento dom de la pregunta
-  var pregunta = $('<h3>').text(this.question.question);
+  var pregunta = $('<h2>').text(this.question.question);
   this.element.append(pregunta);
 
   // Creamos los elementos del dom de la respuesta

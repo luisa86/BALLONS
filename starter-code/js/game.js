@@ -10,11 +10,10 @@ function Game(lives){
   this.refreshScore();
   this.refreshLives();
   this.generateQuestion();
-  this.gameOver();
 }
 
 Game.prototype.refreshScore = function(){
-  this.scoreEl.text(this.score + "puntos");
+  this.scoreEl.text(this.score + " puntos");
 };
 
 Game.prototype.refreshLives = function(){
@@ -44,13 +43,12 @@ Game.prototype.ready = function(valid){
     this.refreshLives();
   }
 
+  // Game.prototype.gameOver = function () {
+  //   if (this.lives === 0){
+  //     console.log("HAS LOST");
+  //   }
+  // };
 
   this.refreshScore();
   this.generateQuestion();
 };
-
- Game.prototype.gameOver = function(){
-  if (lives === 0) {
-       console.log("has lost");
-  }
- };
