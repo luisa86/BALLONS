@@ -5,14 +5,15 @@ var assignature;
 var $container;
 var $question;
 var $pop = $('.pop');
-var points = new Points (200, 50, 50, 'rgb(255, 0, 0)', 30, $('#container'));
+var points;
 
 function initGame() {
   $container = $('<div>').attr('id', 'container');
   $('body').prepend($container);
   assignature = new Assignature();
-  assignature.init();
   game = new BubbleGame(questions);
+  points = new Points (200, 50, 50, 'red', 30, $('#container'));
+  assignature.init();
 }
 
 function animateAssignature() {
@@ -42,6 +43,7 @@ function printRespuest() {
     if (res == "true") {
       alert("IS CORRECT!!!!");
       points.createBubble();
+      newQuestion();
     } else {
       alert("HAS LOST!!!!");
     }
@@ -54,7 +56,7 @@ function deletePreviousQuestion(){
 }
 
 function starBubble(){
-  bubble = new Bubble(400, 150, 150, 'rgba(229, 97, 211, 0.8)', 100, $container);
+  bubble = new Bubble(400, 150, 150, 'lightpink', 100, $container);
     var move = function () {
     setInterval (function(){
      bubble.exploit();
@@ -62,56 +64,21 @@ function starBubble(){
    };
 }
 
+function newQuestion(){
+  game.changeActualQuestion();
+  deletePreviousQuestion();
+  animateAssignature();
+  printQuestion();
+  printAnswers();
+  printRespuest();
+  starBubble();
+}
+
 $(document).ready(function() {
 
   initGame();
 
   $("button").on("click", function() {
-    game.changeActualQuestion();
-    deletePreviousQuestion();
-    animateAssignature();
-    printQuestion();
-    printAnswers();
-    printRespuest();
-    starBubble();
+    newQuestion();
   });
-
-
-  // game = new BubbleGame(questions);
-  // bubble = new Bubble(400, 150, 150, "coral", 100, $container);
-  // var $pop = $('.pop');
-  //
-  // var $question = $('<div>').attr('class', game.getType()).text(game.getQuestion());
-  // $pop.append($question);
-  //
-  //
-  // var $answersContainer = $('<div>').attr('class', 'options');
-  // game.getAnswers().forEach(function(answer) {
-  //   var $option = $('<p>').attr('result', answer.correct).text(" * " + answer.option);
-  //   $answersContainer.append($option);
-  // });
-  //
-  // $container.append($answersContainer);
-  //
-  // $("p").on("click", (function() {
-  //   var res = $(this).attr('result');
-  //   if ( res == "true"){
-  //     alert("IS CORRECT!!!!");
-  //   }else {
-  //     alert("HAS LOST!!!!");
-  //   }
-  // }));
-  //
-  // $("button").on("click", (function() {
-  //   game.getQuestion();
-  //   game.getAnswers();
-  //   move();
-  // }));
-  //
-  // var move = function () {
-  //   setInterval (function(){
-  //     bubble.exploit();
-  //   },60);
-  // };
-
 });

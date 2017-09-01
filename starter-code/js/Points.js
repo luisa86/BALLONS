@@ -17,5 +17,5 @@ Points.prototype.createBubble= function () {
     'background-color': this.color,
     'border-radius': this.borderRadius
   });
-  $('#container').append($points);
+  $('body').append($points);
 };
